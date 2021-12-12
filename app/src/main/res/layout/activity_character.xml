@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dmgSkill"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/characterbk"
+    tools:context=".character">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAlignment="center">
+
+                <TextView
+                    android:id="@+id/txt_personaje"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/personaje"
+                    android:textAlignment="center"
+                    android:textColor="#00FF04"
+                    android:textIsSelectable="false"
+                    android:textSize="38sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/edit_codigoPersonaje"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/codigo"
+                    android:inputType="number"
+                    android:textColor="#FF0000"
+                    android:textColorHint="#FF0000" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/edit_namePersonaje"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:fontFamily="@font/play"
+                    android:hint="@string/nombre"
+                    android:inputType="textPersonName"
+                    android:textColor="#FF0000"
+                    android:textColorHint="#FF0000" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/edit_vida"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:fontFamily="@font/play"
+                        android:hint="@string/vida"
+                        android:inputType="number"
+                        android:textColor="#FF0000"
+                        android:textColorHint="#FF0000" />
+
+                    <EditText
+                        android:id="@+id/edit_mana"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:fontFamily="@font/play"
+                        android:hint="@string/mana"
+                        android:inputType="number"
+                        android:textColor="#FF0000"
+                        android:textColorHint="#FF0000" />
+
+                    <EditText
+                        android:id="@+id/edit_clase"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:fontFamily="@font/play"
+                        android:hint="@string/clase"
+                        android:inputType="textPersonName"
+                        android:textColor="#FF0000"
+                        android:textColorHint="#FF0000" />
+
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/play"
+                        android:text="@string/skillComboBox"
+                        android:textColor="#09FF00"
+                        android:textSize="48sp" />
+
+                    <EditText
+                        android:id="@+id/edit_skillName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:fontFamily="@font/play"
+                        android:inputType="textPersonName"
+                        android:textColor="#FF0000"
+                        android:textSize="48sp" />
+
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/skillDmg"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/play"
+                            android:text="@string/dañoSkill"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/edit_dmg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:fontFamily="@font/play"
+                            android:inputType="number"
+                            android:textColor="#FF0000" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/skillMana"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/play"
+                            android:text="@string/costeMana"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/edit_costeMana"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:fontFamily="@font/play"
+                            android:inputType="number"
+                            android:textColor="#FF0000" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/skillUses"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/play"
+                            android:text="@string/numUsos"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/edit_numUsos"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:fontFamily="@font/play"
+                            android:inputType="number"
+                            android:textColor="#FF0000" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/button5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/play"
+                        android:onClick="saveCharacter"
+                        android:text="@string/savePersonaje" />
+
+                    <Button
+                        android:id="@+id/button9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/play"
+                        android:onClick="modifyCharacter"
+                        android:text="@string/modifyPersonaje" />
+
+                    <Button
+                        android:id="@+id/button8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/play"
+                        android:onClick="searchCharacter"
+                        android:text="@string/searchPersonaje" />
+
+                    <Button
+                        android:id="@+id/button6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/play"
+                        android:onClick="deleteCharacter"
+                        android:text="@string/deletePersonaje" />
+
+                    <Button
+                        android:id="@+id/button7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/play"
+                        android:onClick="back"
+                        android:text="@string/btnVolver" />
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/button4"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="playStopMusic"
+                    android:text="@string/music"
+                    android:textSize="34sp" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

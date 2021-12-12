@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:screenOrientation="landscape"
+    android:background="@drawable/background_piano"
+    tools:context=".Piano">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="643dp"
+        android:layout_height="161dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/btnDoSostenido"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/doSostenido"
+            android:onClick="btnDoBajo"
+            app:srcCompat="@mipmap/do_sostenidoyno"
+            tools:ignore="ImageContrastCheck" />
+
+        <ImageButton
+            android:id="@+id/btnSi"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/si"
+            android:onClick="btnSi"
+            app:srcCompat="@mipmap/si" />
+
+        <ImageButton
+            android:id="@+id/btnLa"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/la"
+            android:onClick="btnLa"
+            app:srcCompat="@mipmap/la" />
+
+        <ImageButton
+            android:id="@+id/btnSol"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/sol"
+            android:onClick="btnSol"
+            app:srcCompat="@mipmap/sol_bien" />
+
+        <ImageButton
+            android:id="@+id/btnFa"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/fa"
+            android:onClick="btnFa"
+            app:srcCompat="@mipmap/fa" />
+
+        <ImageButton
+            android:id="@+id/btnMi"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/mi"
+            android:onClick="btnMi"
+            app:srcCompat="@mipmap/mi" />
+
+        <ImageButton
+            android:id="@+id/btnRe"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/re"
+            android:onClick="btnRe"
+            app:srcCompat="@mipmap/re"
+            tools:ignore="ImageContrastCheck" />
+
+        <ImageButton
+            android:id="@+id/btnDo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/doNormal"
+            android:onClick="btnDo"
+            app:srcCompat="@mipmap/do_sostenidoyno"
+            tools:ignore="ImageContrastCheck" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btnVolver"
+        android:text="@string/btnVolver"
+        android:textColor="#EDEDED"
+        android:textColorHighlight="#CC3030"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
