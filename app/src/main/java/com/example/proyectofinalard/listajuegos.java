@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.View;
 import android.widget.RadioButton;
 import android.widget.Toast;
@@ -67,5 +68,9 @@ public class listajuegos extends AppCompatActivity {
         Intent siguiente = new Intent(this, MainActivity.class);
         startActivity(siguiente);
         mp[time].pause();
+    }
+    public boolean onCreateOptionsMenu (Menu menu){
+        getMenuInflater().inflate(R.menu. overflow, menu);
+        return true;
     }
 }

@@ -8,6 +8,7 @@ import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.media.SoundPool;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -68,5 +69,9 @@ public class Piano extends AppCompatActivity {
     public void btnVolver(View view) {
         Intent siguiente = new Intent(this, MainActivity.class);
         startActivity(siguiente);
+    }
+    public boolean onCreateOptionsMenu (Menu menu){
+        getMenuInflater().inflate(R.menu. overflow, menu);
+        return true;
     }
 }

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/recorder"
+        android:icon="@drawable/voz"
+        android:title="@string/grabadora"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/videos"
+        android:icon="@drawable/camaravideos"
+        android:title="@string/camaraVideos"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/fotos"
+        android:icon="@drawable/camarafoto"
+        android:title="@string/camaraFotos"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/camaraFotos"
+        android:title="@string/camaraFotos" />
+    <item
+        android:id="@+id/camaraVideos"
+        android:title="@string/camaraVideos" />
+    <item
+        android:id="@+id/grabadora"
+        android:title="@string/grabadora" />
+</menu>

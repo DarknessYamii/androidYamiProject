@@ -9,6 +9,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -211,5 +212,9 @@ public class character extends AppCompatActivity {
             mp[time].start();
             Toast.makeText(this, "Playing Music!", Toast.LENGTH_SHORT).show();
         }
+    }
+    public boolean onCreateOptionsMenu (Menu menu){
+        getMenuInflater().inflate(R.menu. overflow, menu);
+        return true;
     }
 }

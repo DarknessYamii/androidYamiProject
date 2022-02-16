@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Yamii\'s Applications</string>
+    <string name="btnPiano">Piano</string>
+    <string name="btnJuegos">Game\'s list</string>
+    <string name="btnPersonajes">Character creator</string>
+    <string name="doSostenido">Sustained Do</string>
+    <string name="doNormal">Do</string>
+    <string name="re">Re</string>
+    <string name="mi">Mi</string>
+    <string name="fa">Fa</string>
+    <string name="sol">Sol</string>
+    <string name="la">La</string>
+    <string name="si">Si</string>
+    <string name="btnVolver">Back</string>
+    <string name="accion">Action</string>
+    <string name="plataforma">Platform</string>
+    <string name="puzzle">Puzle</string>
+    <string name="rol">Rol</string>
+    <string name="buscar">Search</string>
+    <string name="seleccione">Select the game gender to search:</string>
+    <string name="personaje">Character creation</string>
+    <string name="codigo">Character Code</string>
+    <string name="nombre">Character Name</string>
+    <string name="vida">Health</string>
+    <string name="mana">Mana</string>
+    <string name="clase">Class</string>
+    <string name="habilidad">Create a skill</string>
+    <string name="skillComboBox">Skill:</string>
+    <string name="skill">Name</string>
+    <string name="dañoSkill">Damage</string>
+    <string name="costeMana">Mana cost</string>
+    <string name="numUsos">Uses number</string>
+    <string name="savePersonaje">Save</string>
+    <string name="modifyPersonaje">Modify</string>
+    <string name="searchPersonaje">Search character</string>
+    <string name="deletePersonaje">Delete</string>
+    <string name="music">♫</string>
+    <string name="camaraFotos">Photo\'s camera</string>
+    <string name="camaraVideos">Video\'s camera</string>
+    <string name="grabadora">Recorder</string>
+</resources>

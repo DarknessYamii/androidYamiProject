@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -27,5 +28,9 @@ public class buscador_listajuegos extends AppCompatActivity {
     public void backJuegos(View view){
         Intent i = new Intent(this, listajuegos. class);
         startActivity(i) ;
+    }
+    public boolean onCreateOptionsMenu (Menu menu){
+        getMenuInflater().inflate(R.menu. overflow, menu);
+        return true;
     }
 }

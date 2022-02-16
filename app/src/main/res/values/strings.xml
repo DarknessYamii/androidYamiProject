@@ -35,4 +35,9 @@
     <string name="searchPersonaje">Buscar Personaje</string>
     <string name="deletePersonaje">Borrar</string>
     <string name="music">♫</string>
+    <string name="camaraFotos">Camara de fotos</string>
+    <string name="camaraVideos">Camara de videos</string>
+    <string name="grabadora">Grabadora</string>
+    <string name="camrafoto">camrafoto</string>
+    <string name="bolacristal">bolacristal</string>
 </resources>
