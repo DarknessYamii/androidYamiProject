@@ -3,10 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/DarknessYamii/AndroidStudioProjects/proyectoFinalARD/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.4036458333333333" />
         <entry key="..\:/Users/DarknessYamii/AndroidStudioProjects/proyectoFinalARD/app/src/main/res/drawable/main_buttons.xml" value="0.37777777777777777" />
+        <entry key="..\:/Users/DarknessYamii/AndroidStudioProjects/proyectoFinalARD/app/src/main/res/font/play.xml" value="0.41770833333333335" />
         <entry key="..\:/Users/DarknessYamii/AndroidStudioProjects/proyectoFinalARD/app/src/main/res/layout/activity_buscador_listajuegos.xml" value="0.3875" />
         <entry key="..\:/Users/DarknessYamii/AndroidStudioProjects/proyectoFinalARD/app/src/main/res/layout/activity_camara_fotos.xml" value="0.3875" />
+        <entry key="..\:/Users/DarknessYamii/AndroidStudioProjects/proyectoFinalARD/app/src/main/res/layout/activity_camara_video.xml" value="0.3875" />
         <entry key="..\:/Users/DarknessYamii/AndroidStudioProjects/proyectoFinalARD/app/src/main/res/layout/activity_character.xml" value="0.21927083333333333" />
+        <entry key="..\:/Users/DarknessYamii/AndroidStudioProjects/proyectoFinalARD/app/src/main/res/layout/activity_grabadora.xml" value="0.25" />
         <entry key="..\:/Users/DarknessYamii/AndroidStudioProjects/proyectoFinalARD/app/src/main/res/layout/activity_listajuegos.xml" value="0.27717391304347827" />
         <entry key="..\:/Users/DarknessYamii/AndroidStudioProjects/proyectoFinalARD/app/src/main/res/layout/activity_main.xml" value="0.27717391304347827" />
         <entry key="..\:/Users/DarknessYamii/AndroidStudioProjects/proyectoFinalARD/app/src/main/res/layout/activity_piano.xml" value="0.21927083333333333" />

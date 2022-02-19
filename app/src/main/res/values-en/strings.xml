@@ -39,4 +39,8 @@
     <string name="camaraFotos">Photo\'s camera</string>
     <string name="camaraVideos">Video\'s camera</string>
     <string name="grabadora">Recorder</string>
+    <string name="camrafoto">photocamera</string>
+    <string name="bolacristal">glassball</string>
+    <string name="camaravideo">videocamara</string>
+    <string name="pulsaGrabar">Press into the camera button to record</string>
 </resources>

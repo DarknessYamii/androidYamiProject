@@ -40,4 +40,6 @@
     <string name="grabadora">Grabadora</string>
     <string name="camrafoto">camrafoto</string>
     <string name="bolacristal">bolacristal</string>
+    <string name="camaravideo">camaravideo</string>
+    <string name="pulsaGrabar">Pulsa en la camara de video para grabar</string>
 </resources>

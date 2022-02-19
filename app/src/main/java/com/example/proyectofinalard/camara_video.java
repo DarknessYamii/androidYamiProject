@@ -1,56 +1,50 @@
 package com.example.proyectofinalard;
 
-import      androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
+import android.Manifest;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
-import android.media.AudioManager;
-import android.media.MediaPlayer;
-import android.media.SoundPool;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
-import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
-    MediaPlayer mp[] = new MediaPlayer[1];
-    int time = 0;
+public class camara_video extends AppCompatActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
-        mp[0] = MediaPlayer.create(this, R.raw.lordoftherings);
-        getSupportActionBar().setDisplayShowHomeEnabled( true);
-        getSupportActionBar().setIcon(R.mipmap. ic_launcher);
-
-    }
-
-    public void playStopMusic(View view) {
-        if (mp[time].isPlaying()) {
-            mp[time].pause();
-            Toast.makeText(this, "Stoping Music!", Toast.LENGTH_SHORT).show();
-        } else {
-            mp[time].start();
-            Toast.makeText(this, "Playing Music!", Toast.LENGTH_SHORT).show();
+        setContentView(R.layout.activity_camara_video);
+        if (ContextCompat. checkSelfPermission(camara_video. this,
+                Manifest.permission. WRITE_EXTERNAL_STORAGE) !=
+                PackageManager. PERMISSION_GRANTED &&
+                ActivityCompat. checkSelfPermission(camara_video. this,
+                        Manifest.permission. CAMERA) != PackageManager. PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(camara_video.this, new
+                    String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE,
+                    Manifest.permission.CAMERA}, 1000);
         }
     }
-    public void goPiano(View view) {
-        Intent siguiente = new Intent(this, Piano.class);
-        startActivity(siguiente);
-        mp[time].pause();
+    static final int REQUEST_VIDEO_CAPTURE = 1;
+     public void TomarVideo(View view) {
+        Intent takeVideoIntent = new
+                Intent(MediaStore.ACTION_VIDEO_CAPTURE);
+        if (takeVideoIntent.resolveActivity(getPackageManager()) !=
+                null) {
+            startActivityForResult(takeVideoIntent,
+                    REQUEST_VIDEO_CAPTURE);
+        }
     }
-    public void goJuegos(View view) {
-        Intent siguiente = new Intent(this, listajuegos.class);
+
+    public void back(View view) {
+        Intent siguiente = new Intent(this, MainActivity.class);
         startActivity(siguiente);
-        mp[time].pause();
-    }
-    public void goCharacter(View view) {
-        Intent siguiente = new Intent(this, character.class);
-        startActivity(siguiente);
-        mp[time].pause();
     }
 
     public boolean onCreateOptionsMenu (Menu menu){
@@ -80,5 +74,4 @@ public class MainActivity extends AppCompatActivity {
         }
         return super .onOptionsItemSelected(item) ;
     }
-
 }
